@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel Customizer</title>
+<link rel="icon" type="image/png" href="misc_assets/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="misc_assets/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="layout.css" type="text/css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-21JDNT4WD6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-21JDNT4WD6');
+</script>
+</head>
+
+<body onload="loaded()">
+<div id = "loading_container">
+<div id="loader"></div>
+</div>
+<img class = "header" src = "misc_assets/title banner.gif" alt = "title"/>
+
+<div class = "container">
+<span class = "intro">
+<p>Welcome to the Squirrel Customizer! Mobile users may want to rotate their device.</p>
+</span>
+
+<button class="button home" onclick="location.href='https://ajc-pet-customizers.github.io';"> </button>
+<div class="color_panel_div">
+  <div></div>
+  <div class="color_grid" id = "color_grid_1"></div>
+  <div class="color_grid" id = "color_grid_2"></div>
+</div>
+
+<div class="eye_panel_div">
+  <div> </div> <div></div>
+</div>
+
+<div class="other_panel_div" style = "grid-area:other_panels">
+  <div></div><div></div><div></div>
+</div>
+
+<div class = "squirrel_container" id="squirrel_container">
+  <img class="squirrel tail" id="tail" src = "misc_assets/empty.png" alt = "tail" style="position:relative"/>
+  <img class="squirrel belly" id="belly" src = "misc_assets/empty.png" alt = "belly" style="position:absolute"/>
+  <img class="squirrel leftear" id="leftear" src = "misc_assets/empty.png" alt = "leftear" style="position:absolute"/>
+  <img class="squirrel body" id="body" src = "misc_assets/empty.png" alt = "body" style="position:absolute"/>
+  <img class="squirrel eye" id="eye" src = "misc_assets/empty.png" alt = "eye" style="position:absolute"/>
+  <img class="squirrel hair" id="hair" src = "misc_assets/empty.png" alt = "hair" style="position:absolute"/>
+  <img class="squirrel rightear" id="rightear" src = "misc_assets/empty.png" alt = "rightear" style="position:absolute"/>
+  <img class="squirrel watermark" id="watermark" src = "misc_assets/empty.png" alt = "watermark" style="position:absolute"/>
+  <canvas class = "squirrel_canvas" id="squirrel_canvas" width="1000" height="1000"></canvas>
+  <div class="squirrel" style="position:absolute; z-index: 200"> </div>
+  <button class="button save" id = "save"> </button>
+  <button class="button new_tab" id = "new_tab"> </button>
+  <button class="button randomize" id = "randomize"> </button>
+  <button class="button bg_contrast" id = "bg_contrast"> </button>
+</div>
+
+<div style = "grid-area:empty"></div>
+</div>
+<div class = "footer2"> Created by <a href="https://aj-item-worth.fandom.com/wiki/User:BrightSunshine" target="_blank">BrightSunshine</a> • Licensed under <a href = "https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC-BY-NC 4.0</a> • Fonts and some assets adapted from the <a href="https://www.animaljamarchives.com/" target="_blank">Animal Jam Archives</a> • Fair-use of copyrighted material from <a href="https://www.wildworks.com/" target="_blank">WildWorks</a></div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
